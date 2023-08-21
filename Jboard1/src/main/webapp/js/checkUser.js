@@ -82,7 +82,6 @@
 				// 입력 데이터 가져오기
 				const email = this.value;
 				
-				
 				//이메일 검사
 			
 				if(!email.match(reEmail)){
@@ -91,10 +90,6 @@
 					isEmailOk = false;
 					return;
 				}
-				
-			
-				
-				
 				const xhr = new XMLHttpRequest();
 				xhr.open('GET', '/Jboard1/user/checkEmail.jsp?email='+email);
 				xhr.send();
